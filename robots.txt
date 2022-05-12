@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://snowith.github.io/sitemap.xml
-Host: https://snowith.github.io
+Sitemap: https://hyeonjeongyeo.github.io/sitemap.xml
+Host: https://hyeonjeongyeo.github.io
