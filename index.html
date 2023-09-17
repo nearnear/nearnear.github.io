@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <!-- 오른쪽 위 요소  -->
+    <div class="right-top">
+        <h2 id="date-and-clock">2033년 1월 1일 (월)</h2>
+        <div id="weather">
+            <div class="icon-container"></div>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- 오른쪽 아래 요소 -->
+    <div class="right-botton">
+        <span id="location"></span>
+    </div>
+
+    <!-- 왼쪽 위 요소 -->
+    <div class="left-top">
+        <form id="todo-form" class="transparent-form">
+            <input 
+                required
+                maxlength="12" 
+                type="text" 
+                placeholder="한 줄 메모" 
+                class="transparent-input"  
+            />
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <!-- 왼쪽 아래 요소 -->
+    <div class="left-botton">
+        <span id="creator">This is an <a href="https://github.com/nearnear">open source</a> project.</span>
+    </div>
+
+    <!-- 정 중앙 요소 -->
+    <div class="header-form-group">
+        <div id="before-login" class="hidden">
+            <h1 id="login-greeting">안녕하세요.</h1>
+            <form id="login-form" class="transparent-form">
+                <span>당신의 이름은 </span>
+                <input 
+                    required 
+                    maxlength="15" 
+                    type="text" 
+                    class="transparent-input"
+                />
+            </form>
+        </div>
+        <div id="after-login" class="hidden">
+            <h1 id="greeting"></h1>
+            <form id="search-form" class="transparent-form"> 
+                <i class="fab fa-google-plus-g"></i>
+                <input 
+                    type="text"
+                    maxlength="40"
+                    class="transparent-input"
+                    placeholder="Google 검색 ..."
+                    style="width: 500px; padding: 10px;"
+                />
+            </form>
+        </div>
+    </div>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
