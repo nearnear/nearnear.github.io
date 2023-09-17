@@ -61,31 +61,23 @@ button {
     padding: 20px;
 }
 
-.left-top {
-    /* 화면에서의 포지션 */
-    position: absolute;
-    top: 20px;
-    right: 0px;
-    padding: 20px;
-    /* 내부 정렬 */
-    display: flex;
-    flex-direction: column; /* 열 방향으로 요소 배치 */
-    align-items: center; /* 수직 가운데 정렬 */
-}
 
-#todo-form input[type="text"] {
-    width: 160px;
+#todo-form {
+    position: absolute; /* form 요소를 절대 위치로 설정 */
+    top: 40px;
+    right: 50px;
 }
 #todo-list {
+    position: absolute; /* list 요소도 절대 위치로 설정 */
+    top: 65px; /* 적절한 위치로 조절 */
+    right: 0px;
     list-style: none;
-    display: flex;
-    flex-wrap: wrap; /* 항목이 공간을 넘칠 때 줄바꿈 */
-    max-width: 200px; /* 최대 너비 설정 */
+    padding: 0; /* 리스트 스타일의 패딩 제거 */
 }
 .list-item {
-    width: 200px; /* 각 항목의 너비 설정 */
-    height: 20px; /* 각 항목의 높이 설정 */
-    margin: 1px; /* 항목 간의 간격 설정 */
+    width: 200px;
+    height: 20px;
+    margin: 1px;
 }
 
 .icon-container {

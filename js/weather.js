@@ -1,9 +1,4 @@
-const API_KEY = process.env.API_KEY;
-if (!API_KEY) {
-    console.error('API KEY를 찾을 수 없습니다.');
-} else {
-    console.log('API_KEY:', API_KEY);
-}
+const API_KEY = "8cf4e829f6fb6202e1d4928eb40d0a2e";
 
 function onGeoSuccess (position) {
     const lat = position.coords.latitude;
